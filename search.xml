@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[树莓派之初体验]]></title>
+      <url>%2F2017%2F03%2F21%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8B%E5%88%9D%E4%BD%93%E9%AA%8C%2F</url>
+      <content type="text"><![CDATA[关于树莓派树莓派出来已经有好几年了，从1代到现在的3代，可伶我之前都没关注过有这么个好玩的东西。树莓派用的是博通的专用芯片，国内也出了类似树莓派的板子香蕉派和香橙派用的是全志的芯片，板卡价格更低至65元，无法想象功能齐全性能杠杠的“小电脑”居然可以做到如此低成本Amazing~~~。 为了体验学习下最终入了一块二手的Pi2的板子，对于上手学习来说100块买个裸板Pi2玩玩很是实惠，树莓派相对与国产的香橙派和香蕉派性能更稳定些。 系统安装树莓派的系统安装还是很简单的，选择自己要安装的操作系统从Raspberry官网下载系统镜像。我选择是Raspbian系统，鉴于我手头上只有4G的TF卡所以选择了不带桌面的Lite版，带桌面的Raspbian系统需要8G的TF卡。 系统镜像文件下载后，先通过SDFormatter软件选择逻辑开关ON格式化TF卡，再用Win32DiskImager软件加载镜像写入到格式化后的TF卡中，至此系统安装的准备工作就完成了。 系统初始化烧好镜像的TF插入树莓派板子，系统就正式启动了，查看启动输出信息有三种方式： 接HDMI显示器和键盘 通过USB转串口TTL电平连接树莓派串口 树莓派默认开启SSH，扫描树莓派IP地址后通过SSH连接 注意：最新版本系统又默认关闭了SSH，所以下载的是最新系统的话只能选择1、2方式进行初始设置，开启SSH才能通过网络连接。 树莓派默认登录用户名：pi，密码：raspberry；登录系统需要设置修改以下配置方便日后操作。 扩展TF卡全部空间（输入：sudo raspi-config，选择1 Expand Filesystem） 启动root账户（输入：sudo passwd root，再输入2次密码） 修改软件源列表（输入：sudo nano /etc/apt/sources.list，删除文件里设置的软件源替换为以下列表） 1234567891011deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contribdeb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contribdeb http://mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contribdeb-src http://mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contribdeb http://mirrors.cqu.edu.cn/Raspbian/raspbian jessie main contrib non-free rpideb-src http://mirrors.cqu.edu.cn/Raspbian/raspbian/ jessie main contrib non-free rpideb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contribdeb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contribdeb http://mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpideb-src http://mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpi 设置静态IP（输入：sdo nano /etc/dhcpcd.conf，然后在末尾添加以下设置） interface eth0static ip_address=192.168.1.110/24static routers=192.168.1.1static domain_name_servers=202.102.152.3 114.114.114.114 如果想通过SSH登录root账户 输入：sudo nano /etc/ssh/sshd_config将PermitRootLogin no改成PermitRootLogin yes 完成以上设置后就可以重启树莓派了。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[title]]></title>
       <url>%2F2017%2F03%2F13%2Ftitle%2F</url>
       <content type="text"></content>
