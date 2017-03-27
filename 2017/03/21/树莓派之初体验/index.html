@@ -24,7 +24,7 @@
 <meta property="og:description" content="关于树莓派树莓派出来已经有好几年了，从1代到现在的3代，可伶我之前都没关注过有这么个好玩的东西。树莓派用的是博通的专用芯片，国内也出了类似树莓派的板子香蕉派和香橙派用的是全志的芯片，板卡价格更低至65元，无法想象功能齐全性能杠杠的“小电脑”居然可以做到如此低成本Amazing~~~。
 为了体验学习下最终入了一块二手的Pi2的板子，对于上手学习来说100块买个裸板Pi2玩玩很是实惠，树莓派相对与国">
 <meta property="og:image" content="http://omsnt3z0g.bkt.clouddn.com/Raspberry%20Pi.jpg">
-<meta property="og:updated_time" content="2017-03-22T04:35:02.801Z">
+<meta property="og:updated_time" content="2017-03-23T08:52:25.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派之初体验">
 <meta name="twitter:description" content="关于树莓派树莓派出来已经有好几年了，从1代到现在的3代，可伶我之前都没关注过有这么个好玩的东西。树莓派用的是博通的专用芯片，国内也出了类似树莓派的板子香蕉派和香橙派用的是全志的芯片，板卡价格更低至65元，无法想象功能齐全性能杠杠的“小电脑”居然可以做到如此低成本Amazing~~~。
@@ -259,7 +259,7 @@
 <li>启动root账户（输入：<code>sudo passwd root</code>，再输入2次密码）</li>
 <li>修改软件源列表（输入：<code>sudo nano /etc/apt/sources.list</code>，删除文件里设置的软件源替换为以下列表）</li>
 </ul>
-<figure class="highlight d"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">deb http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb http:<span class="comment">//mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line"></div><div class="line">deb http:<span class="comment">//mirrors.cqu.edu.cn/Raspbian/raspbian jessie main contrib non-free rpi</span></div><div class="line">deb-src http:<span class="comment">//mirrors.cqu.edu.cn/Raspbian/raspbian/ jessie main contrib non-free rpi</span></div><div class="line">deb http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></div><div class="line">deb http:<span class="comment">//mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpi</span></div><div class="line">deb-src http:<span class="comment">//mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpi</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirror.sysu.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirror.sysu.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.cqu.edu.cn/Raspbian/raspbian</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.zju.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.zju.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div></pre></td></tr></table></figure>
 <ul>
 <li><p>设置静态IP（输入：<code>sdo nano /etc/dhcpcd.conf</code>，然后在末尾添加以下设置）</p>
 <blockquote>
@@ -273,6 +273,18 @@
 </li>
 </ul>
 <p>完成以上设置后就可以重启树莓派了。</p>
+<h1 id="桌面系统远程VNC设置"><a href="#桌面系统远程VNC设置" class="headerlink" title="桌面系统远程VNC设置"></a>桌面系统远程VNC设置</h1><p>最新版的Raspbian系统已经自带VNCserver只需要在设置里启用一下，然后设置就可以用啦。</p>
+<p>输入：<code>sudo raspi-config</code></p>
+<p>选择<code>5.Interfacing Options</code></p>
+<p>找到VNC（远程桌面），选择Yes（是）enable</p>
+<p>输入：<code>sudo nano /etc/init.d/vncserver</code></p>
+<p>然后 复制下面的内容 右键粘贴进去</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line"><span class="comment">### BEGIN INIT INFO</span></div><div class="line"><span class="comment"># Provides:          vncserver</span></div><div class="line"><span class="comment"># Required-Start:    $local_fs</span></div><div class="line"><span class="comment"># Required-Stop:     $local_fs</span></div><div class="line"><span class="comment"># Default-Start:     2 3 4 5</span></div><div class="line"><span class="comment"># Default-Stop:      0 1 6</span></div><div class="line"><span class="comment"># Short-Description: Start/stop vncserver</span></div><div class="line"><span class="comment">### END INIT INFO</span></div><div class="line"> </div><div class="line"><span class="comment"># More details see:</span></div><div class="line"><span class="comment"># http://www.penguintutor.com/linux/vnc</span></div><div class="line"> </div><div class="line"><span class="comment">### Customize this entry</span></div><div class="line"><span class="comment"># Set the USER variable to the name of the user to start vncserver under</span></div><div class="line"><span class="built_in">export</span> USER=<span class="string">'pi'</span></div><div class="line"><span class="comment">### End customization required</span></div><div class="line"> </div><div class="line"><span class="built_in">eval</span> <span class="built_in">cd</span> ~<span class="variable">$USER</span></div><div class="line"> </div><div class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$1</span>"</span> <span class="keyword">in</span></div><div class="line">  start)</div><div class="line">    <span class="comment"># 启动命令行。此处自定义分辨率、控制台号码或其它参数。</span></div><div class="line">    su <span class="variable">$USER</span> -c <span class="string">'/usr/bin/vncserver -depth 16 -geometry 1024x768 :1'</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Starting VNC server for <span class="variable">$USER</span> "</span></div><div class="line">    ;;</div><div class="line">  stop)</div><div class="line">    <span class="comment"># 终止命令行。此处控制台号码与启动一致。</span></div><div class="line">    su <span class="variable">$USER</span> -c <span class="string">'/usr/bin/vncserver -kill :1'</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"vncserver stopped"</span></div><div class="line">    ;;</div><div class="line">  *)</div><div class="line">    <span class="built_in">echo</span> <span class="string">"Usage: /etc/init.d/vncserver &#123;start|stop&#125;"</span></div><div class="line">    <span class="built_in">exit</span> 1</div><div class="line">    ;;</div><div class="line"><span class="keyword">esac</span></div><div class="line"><span class="built_in">exit</span> 0</div></pre></td></tr></table></figure>
+<p>然后Ctrl+O回车保存，Ctrl+X退出文本编辑器</p>
+<p>修改权限：<code>sudo chmod 755 /etc/init.d/vncserver</code></p>
+<p>然后添加开机启动项：<code>sudo update-rc.d vncserver defaults</code></p>
+<p>最后重启树莓派:<code>sudo reboot</code></p>
+<p>如果不出意外  树莓派开机后 就可以连接VNC了</p>
 
             
         </div>
@@ -291,7 +303,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/Allegro添加Logo利器/"  data-tooltip="Allegro添加Logo利器">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -299,7 +311,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/13/title/" data-tooltip="title">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/12/建站小记/" data-tooltip="建站小记">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -364,7 +376,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/Allegro添加Logo利器/"  data-tooltip="Allegro添加Logo利器">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -372,7 +384,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/13/title/" data-tooltip="title">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/12/建站小记/" data-tooltip="建站小记">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>

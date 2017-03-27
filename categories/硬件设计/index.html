@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Tornado&#39;s Blog">
-    <title>分类: technology_common - Tornado&#39;s Blog</title>
+    <title>分类: 硬件设计 - Tornado&#39;s Blog</title>
     <meta name="author" content="Tornado">
     
     
@@ -18,7 +18,7 @@
     <meta name="description" content="读书、编程、跑步、教育、投资">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Tornado's Blog">
-<meta property="og:url" content="http://chinaluou.github.io/categories/technology-common/index.html">
+<meta property="og:url" content="http://chinaluou.github.io/categories/硬件设计/index.html">
 <meta property="og:site_name" content="Tornado's Blog">
 <meta property="og:description" content="读书、编程、跑步、教育、投资">
 <meta name="twitter:card" content="summary">
@@ -217,21 +217,21 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/03/13/title/">
-                            title
+                        <a class="link-unstyled" href="/2017/03/24/Allegro添加Logo利器/">
+                            Allegro添加Logo利器
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-03-13T22:01:37+08:00">
+    <time itemprop="datePublished" datetime="2017-03-24T18:01:37+08:00">
 	
-		    2017/03/13 22:01:37
+		    2017/03/24 18:01:37
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/categories/technology-common/">technology_common</a>
+    <a class="category-link" href="/categories/硬件设计/">硬件设计</a>
 
 
     
@@ -240,13 +240,30 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    
+                    <p><img src="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png" alt="PCB Design and Analysis"></p>
+<h2 id="LogoMaker-Skill-Utility"><a href="#LogoMaker-Skill-Utility" class="headerlink" title="LogoMaker Skill Utility"></a>LogoMaker Skill Utility</h2><hr>
+<p>LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。</p>
+<h2 id="插件安装步骤"><a href="#插件安装步骤" class="headerlink" title="插件安装步骤"></a>插件安装步骤</h2><hr>
+<p>Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。</p>
+<ol>
+<li>下载最新的<a href="http://potrace.sourceforge.net/download" title="potrace" target="_blank" rel="external">potrace</a></li>
+<li>解压potrace文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：POTRACE_PATH=X:\Cadence\potrace</li>
+<li>下载最新的<a href="http://www.imagemagick.org/script/binary-releases.php" title="ImageMagick" target="_blank" rel="external">ImageMagick</a></li>
+<li>解压ImageMagick文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：MAGICK_HOME=X:\Cadence\ImageMagick\ImageMagick-6.5.1-3</li>
+<li>下载il文件<a href="https://community.cadence.com/cfs-file/__key/telligent-evolution-components-attachments/00-27-00-00-00-00-73-72/logoMaker_5F00_public.il" title="logoMaker_public.il" target="_blank" rel="external">logoMaker_public.il</a></li>
+<li>将logoMaker_public.il文件放到skill目录下，例如：X:\Cadence\SPB_16.6\share\local\pcb\skill</li>
+<li>打开X:\Cadence\SPB_16.6\share\local\pcb\skill目录下allegro.ilinit文件(若不存在则自己创建)，添加语句<code>load(&quot;logoMaker_public.il&quot;)</code></li>
+<li>设置完成，打开Allegro在Command窗口中输入logomaker，启动Logo添加页面，Enjoy it!<br><img src="http://omsnt3z0g.bkt.clouddn.com/LogoMaker.png" alt="loagmaker"></li>
+</ol>
+
                     
                         
                     
                     
                         <p>
-                            <a href="/2017/03/13/title/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2017/03/24/Allegro添加Logo利器/#post-footer" class="postShorten-excerpt_link link">
                                 评论分享
                             </a>
                         </p>

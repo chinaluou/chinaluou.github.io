@@ -217,6 +217,70 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2017/03/24/Allegro添加Logo利器/">
+                            Allegro添加Logo利器
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-03-24T18:01:37+08:00">
+	
+		    2017/03/24 18:01:37
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/categories/硬件设计/">硬件设计</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p><img src="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png" alt="PCB Design and Analysis"></p>
+<h2 id="LogoMaker-Skill-Utility"><a href="#LogoMaker-Skill-Utility" class="headerlink" title="LogoMaker Skill Utility"></a>LogoMaker Skill Utility</h2><hr>
+<p>LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。</p>
+<h2 id="插件安装步骤"><a href="#插件安装步骤" class="headerlink" title="插件安装步骤"></a>插件安装步骤</h2><hr>
+<p>Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。</p>
+<ol>
+<li>下载最新的<a href="http://potrace.sourceforge.net/download" title="potrace" target="_blank" rel="external">potrace</a></li>
+<li>解压potrace文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：POTRACE_PATH=X:\Cadence\potrace</li>
+<li>下载最新的<a href="http://www.imagemagick.org/script/binary-releases.php" title="ImageMagick" target="_blank" rel="external">ImageMagick</a></li>
+<li>解压ImageMagick文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：MAGICK_HOME=X:\Cadence\ImageMagick\ImageMagick-6.5.1-3</li>
+<li>下载il文件<a href="https://community.cadence.com/cfs-file/__key/telligent-evolution-components-attachments/00-27-00-00-00-00-73-72/logoMaker_5F00_public.il" title="logoMaker_public.il" target="_blank" rel="external">logoMaker_public.il</a></li>
+<li>将logoMaker_public.il文件放到skill目录下，例如：X:\Cadence\SPB_16.6\share\local\pcb\skill</li>
+<li>打开X:\Cadence\SPB_16.6\share\local\pcb\skill目录下allegro.ilinit文件(若不存在则自己创建)，添加语句<code>load(&quot;logoMaker_public.il&quot;)</code></li>
+<li>设置完成，打开Allegro在Command窗口中输入logomaker，启动Logo添加页面，Enjoy it!<br><img src="http://omsnt3z0g.bkt.clouddn.com/LogoMaker.png" alt="loagmaker"></li>
+</ol>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/03/24/Allegro添加Logo利器/#post-footer" class="postShorten-excerpt_link link">
+                                评论分享
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/03/21/树莓派之初体验/">
                             树莓派之初体验
                         </a>
@@ -259,7 +323,7 @@
 <li>启动root账户（输入：<code>sudo passwd root</code>，再输入2次密码）</li>
 <li>修改软件源列表（输入：<code>sudo nano /etc/apt/sources.list</code>，删除文件里设置的软件源替换为以下列表）</li>
 </ul>
-<figure class="highlight d"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">deb http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb http:<span class="comment">//mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</span></div><div class="line"></div><div class="line">deb http:<span class="comment">//mirrors.cqu.edu.cn/Raspbian/raspbian jessie main contrib non-free rpi</span></div><div class="line">deb-src http:<span class="comment">//mirrors.cqu.edu.cn/Raspbian/raspbian/ jessie main contrib non-free rpi</span></div><div class="line">deb http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></div><div class="line">deb-src http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></div><div class="line">deb http:<span class="comment">//mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpi</span></div><div class="line">deb-src http:<span class="comment">//mirrors.zju.edu.cn/raspbian/raspbian/ jessie main contrib non-free rpi</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirror.sysu.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirror.sysu.edu.cn/raspbian/raspbian/</span> <span class="string">wheezy</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.cqu.edu.cn/Raspbian/raspbian</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">non-free</span> <span class="string">contrib</span></div><div class="line"><span class="string">deb</span> <span class="attr">http://mirrors.zju.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div><div class="line"><span class="string">deb-src</span> <span class="attr">http://mirrors.zju.edu.cn/raspbian/raspbian/</span> <span class="string">jessie</span> <span class="string">main</span> <span class="string">contrib</span> <span class="string">non-free</span> <span class="string">rpi</span></div></pre></td></tr></table></figure>
 <ul>
 <li><p>设置静态IP（输入：<code>sdo nano /etc/dhcpcd.conf</code>，然后在末尾添加以下设置）</p>
 <blockquote>
@@ -273,6 +337,18 @@
 </li>
 </ul>
 <p>完成以上设置后就可以重启树莓派了。</p>
+<h1 id="桌面系统远程VNC设置"><a href="#桌面系统远程VNC设置" class="headerlink" title="桌面系统远程VNC设置"></a>桌面系统远程VNC设置</h1><p>最新版的Raspbian系统已经自带VNCserver只需要在设置里启用一下，然后设置就可以用啦。</p>
+<p>输入：<code>sudo raspi-config</code></p>
+<p>选择<code>5.Interfacing Options</code></p>
+<p>找到VNC（远程桌面），选择Yes（是）enable</p>
+<p>输入：<code>sudo nano /etc/init.d/vncserver</code></p>
+<p>然后 复制下面的内容 右键粘贴进去</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line"><span class="comment">### BEGIN INIT INFO</span></div><div class="line"><span class="comment"># Provides:          vncserver</span></div><div class="line"><span class="comment"># Required-Start:    $local_fs</span></div><div class="line"><span class="comment"># Required-Stop:     $local_fs</span></div><div class="line"><span class="comment"># Default-Start:     2 3 4 5</span></div><div class="line"><span class="comment"># Default-Stop:      0 1 6</span></div><div class="line"><span class="comment"># Short-Description: Start/stop vncserver</span></div><div class="line"><span class="comment">### END INIT INFO</span></div><div class="line"> </div><div class="line"><span class="comment"># More details see:</span></div><div class="line"><span class="comment"># http://www.penguintutor.com/linux/vnc</span></div><div class="line"> </div><div class="line"><span class="comment">### Customize this entry</span></div><div class="line"><span class="comment"># Set the USER variable to the name of the user to start vncserver under</span></div><div class="line"><span class="built_in">export</span> USER=<span class="string">'pi'</span></div><div class="line"><span class="comment">### End customization required</span></div><div class="line"> </div><div class="line"><span class="built_in">eval</span> <span class="built_in">cd</span> ~<span class="variable">$USER</span></div><div class="line"> </div><div class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$1</span>"</span> <span class="keyword">in</span></div><div class="line">  start)</div><div class="line">    <span class="comment"># 启动命令行。此处自定义分辨率、控制台号码或其它参数。</span></div><div class="line">    su <span class="variable">$USER</span> -c <span class="string">'/usr/bin/vncserver -depth 16 -geometry 1024x768 :1'</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Starting VNC server for <span class="variable">$USER</span> "</span></div><div class="line">    ;;</div><div class="line">  stop)</div><div class="line">    <span class="comment"># 终止命令行。此处控制台号码与启动一致。</span></div><div class="line">    su <span class="variable">$USER</span> -c <span class="string">'/usr/bin/vncserver -kill :1'</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"vncserver stopped"</span></div><div class="line">    ;;</div><div class="line">  *)</div><div class="line">    <span class="built_in">echo</span> <span class="string">"Usage: /etc/init.d/vncserver &#123;start|stop&#125;"</span></div><div class="line">    <span class="built_in">exit</span> 1</div><div class="line">    ;;</div><div class="line"><span class="keyword">esac</span></div><div class="line"><span class="built_in">exit</span> 0</div></pre></td></tr></table></figure>
+<p>然后Ctrl+O回车保存，Ctrl+X退出文本编辑器</p>
+<p>修改权限：<code>sudo chmod 755 /etc/init.d/vncserver</code></p>
+<p>然后添加开机启动项：<code>sudo update-rc.d vncserver defaults</code></p>
+<p>最后重启树莓派:<code>sudo reboot</code></p>
+<p>如果不出意外  树莓派开机后 就可以连接VNC了</p>
 
                     
                         
@@ -280,103 +356,6 @@
                     
                         <p>
                             <a href="/2017/03/21/树莓派之初体验/#post-footer" class="postShorten-excerpt_link link">
-                                评论分享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/03/13/title/">
-                            title
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-03-13T22:01:37+08:00">
-	
-		    2017/03/13 22:01:37
-    	
-    </time>
-    
-        <span>发布在 </span>
-        
-    <a class="category-link" href="/categories/technology-common/">technology_common</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/03/13/title/#post-footer" class="postShorten-excerpt_link link">
-                                评论分享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/03/13/hello-world/">
-                            Hello World
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-03-13T15:55:10+08:00">
-	
-		    2017/03/13 15:55:10
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/03/13/hello-world/#post-footer" class="postShorten-excerpt_link link">
                                 评论分享
                             </a>
                         </p>

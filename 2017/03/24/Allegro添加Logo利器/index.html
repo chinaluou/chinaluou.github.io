@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Tornado&#39;s Blog">
-    <title>title - Tornado&#39;s Blog</title>
+    <title>Allegro添加Logo利器 - Tornado&#39;s Blog</title>
     <meta name="author" content="Tornado">
     
     
@@ -15,16 +15,37 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="读书、编程、跑步、教育、投资">
+    <meta name="description" content="LogoMaker Skill Utility
+LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。
+插件安装步骤
+Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。
+
+下载最新的potrace
+解压potrace文件到Cad">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="title">
-<meta property="og:url" content="http://chinaluou.github.io/2017/03/13/title/index.html">
+<meta property="og:title" content="Allegro添加Logo利器">
+<meta property="og:url" content="http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/index.html">
 <meta property="og:site_name" content="Tornado's Blog">
-<meta property="og:description" content="读书、编程、跑步、教育、投资">
-<meta property="og:updated_time" content="2017-03-21T06:37:01.776Z">
+<meta property="og:description" content="LogoMaker Skill Utility
+LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。
+插件安装步骤
+Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。
+
+下载最新的potrace
+解压potrace文件到Cad">
+<meta property="og:image" content="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png">
+<meta property="og:image" content="http://omsnt3z0g.bkt.clouddn.com/LogoMaker.png">
+<meta property="og:updated_time" content="2017-03-27T02:37:09.671Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="title">
-<meta name="twitter:description" content="读书、编程、跑步、教育、投资">
+<meta name="twitter:title" content="Allegro添加Logo利器">
+<meta name="twitter:description" content="LogoMaker Skill Utility
+LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。
+插件安装步骤
+Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。
+
+下载最新的potrace
+解压potrace文件到Cad">
+<meta name="twitter:image" content="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png">
     
     
         
@@ -213,19 +234,19 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            title
+            Allegro添加Logo利器
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-03-13T22:01:37+08:00">
+    <time itemprop="datePublished" datetime="2017-03-24T18:01:37+08:00">
 	
-		    2017/03/13 22:01:37
+		    2017/03/24 18:01:37
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/categories/technology-common/">technology_common</a>
+    <a class="category-link" href="/categories/硬件设计/">硬件设计</a>
 
 
     
@@ -235,7 +256,24 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            
+            <p><img src="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png" alt="PCB Design and Analysis"></p>
+<h2 id="LogoMaker-Skill-Utility"><a href="#LogoMaker-Skill-Utility" class="headerlink" title="LogoMaker Skill Utility"></a>LogoMaker Skill Utility</h2><hr>
+<p>LogoMaker Skill Utility是一款不错的小插件，在Allegro中添加的PCB Logo精细度比较高，PCB实物上Logo基本没啥毛刺，边角处理的比较光滑。</p>
+<h2 id="插件安装步骤"><a href="#插件安装步骤" class="headerlink" title="插件安装步骤"></a>插件安装步骤</h2><hr>
+<p>Allegro下我们利用logoMaker Skill utility来实现PCB Logo的添加。</p>
+<ol>
+<li>下载最新的<a href="http://potrace.sourceforge.net/download" title="potrace" target="_blank" rel="external">potrace</a></li>
+<li>解压potrace文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：POTRACE_PATH=X:\Cadence\potrace</li>
+<li>下载最新的<a href="http://www.imagemagick.org/script/binary-releases.php" title="ImageMagick" target="_blank" rel="external">ImageMagick</a></li>
+<li>解压ImageMagick文件到Cadence安装目录下</li>
+<li>添加系统环境变量例如：MAGICK_HOME=X:\Cadence\ImageMagick\ImageMagick-6.5.1-3</li>
+<li>下载il文件<a href="https://community.cadence.com/cfs-file/__key/telligent-evolution-components-attachments/00-27-00-00-00-00-73-72/logoMaker_5F00_public.il" title="logoMaker_public.il" target="_blank" rel="external">logoMaker_public.il</a></li>
+<li>将logoMaker_public.il文件放到skill目录下，例如：X:\Cadence\SPB_16.6\share\local\pcb\skill</li>
+<li>打开X:\Cadence\SPB_16.6\share\local\pcb\skill目录下allegro.ilinit文件(若不存在则自己创建)，添加语句<code>load(&quot;logoMaker_public.il&quot;)</code></li>
+<li>设置完成，打开Allegro在Command窗口中输入logomaker，启动Logo添加页面，Enjoy it!<br><img src="http://omsnt3z0g.bkt.clouddn.com/LogoMaker.png" alt="loagmaker"></li>
+</ol>
+
             
         </div>
     </div>
@@ -246,7 +284,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/21/树莓派之初体验/"  data-tooltip="树莓派之初体验">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -254,7 +292,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/13/hello-world/" data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/21/树莓派之初体验/" data-tooltip="树莓派之初体验">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -264,27 +302,27 @@
     </nav>
 <ul class="post-actions post-action-share">
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至Twitter" href="http://www.jiathis.com/send/?webid=twitter&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至Twitter" href="http://www.jiathis.com/send/?webid=twitter&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-qq"></i>
             </a>
         </li>
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至人人网" href="http://www.jiathis.com/send/?webid=renren&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至人人网" href="http://www.jiathis.com/send/?webid=renren&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-renren"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weixin"></i>
             </a>
         </li>        
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weibo"></i>
             </a>
         </li>
@@ -294,8 +332,8 @@
 
         
             
-                <div id="ds-thread" class="ds-thread" data-thread-key="2017/03/13/title/"
-     data-title="title" data-url="http://chinaluou.github.io/2017/03/13/title/">
+                <div id="ds-thread" class="ds-thread" data-thread-key="2017/03/24/Allegro添加Logo利器/"
+     data-title="Allegro添加Logo利器" data-url="http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/">
 </div>
 
             
@@ -319,7 +357,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/21/树莓派之初体验/"  data-tooltip="树莓派之初体验">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -327,7 +365,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/13/hello-world/" data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/21/树莓派之初体验/" data-tooltip="树莓派之初体验">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -337,27 +375,27 @@
     </nav>
 <ul class="post-actions post-action-share">
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至Twitter" href="http://www.jiathis.com/send/?webid=twitter&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至Twitter" href="http://www.jiathis.com/send/?webid=twitter&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-qq"></i>
             </a>
         </li>
         <li class="post-action">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至人人网" href="http://www.jiathis.com/send/?webid=renren&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至人人网" href="http://www.jiathis.com/send/?webid=renren&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-renren"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weixin"></i>
             </a>
         </li>        
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weibo"></i>
             </a>
         </li>
@@ -369,17 +407,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="3">
     <ul class="share-options">
         <li class="share-option">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至QQ空间" href="http://www.jiathis.com/send/?webid=qzone&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-qq"></i>
             </a>
         </li>
         <li class="share-option">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至微信" href="http://www.jiathis.com/send/?webid=weixin&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weixin"></i>
             </a>
         </li>
         <li class="share-option">
-            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/13/title/&amp;title=title">
+            <a class="post-action-btn btn btn--default tooltip--top" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=chinaluou&amp;url=http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/&amp;title=Allegro添加Logo利器">
                 <i class="fa fa-weibo"></i>
             </a>
         </li>
