@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chinaluou.github.io/"/>
-  <updated>2017-03-27T02:42:17.436Z</updated>
+  <updated>2017-04-10T04:05:04.605Z</updated>
   <id>http://chinaluou.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://chinaluou.github.io/2017/03/24/Allegro%E6%B7%BB%E5%8A%A0Logo%E5%88%A9%E5%99%A8/"/>
     <id>http://chinaluou.github.io/2017/03/24/Allegro添加Logo利器/</id>
     <published>2017-03-24T10:01:37.000Z</published>
-    <updated>2017-03-27T02:42:17.436Z</updated>
+    <updated>2017-04-10T04:05:04.605Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://omsnt3z0g.bkt.clouddn.com/PCB%20Design%20and%20Analysis1.png" alt="PCB Design and Analysis"></p>
 <h2 id="LogoMaker-Skill-Utility"><a href="#LogoMaker-Skill-Utility" class="headerlink" title="LogoMaker Skill Utility"></a>LogoMaker Skill Utility</h2><hr>
@@ -33,7 +33,7 @@
 <li>添加系统环境变量例如：POTRACE_PATH=X:\Cadence\potrace</li>
 <li>下载最新的<a href="http://www.imagemagick.org/script/binary-releases.php" title="ImageMagick" target="_blank" rel="external">ImageMagick</a></li>
 <li>解压ImageMagick文件到Cadence安装目录下</li>
-<li>添加系统环境变量例如：MAGICK_HOME=X:\Cadence\ImageMagick\ImageMagick-6.5.1-3</li>
+<li>添加系统环境变量例如：MAGICK_HOME=X:\Cadence\ImageMagick-6.5.1-3</li>
 <li>下载il文件<a href="https://community.cadence.com/cfs-file/__key/telligent-evolution-components-attachments/00-27-00-00-00-00-73-72/logoMaker_5F00_public.il" title="logoMaker_public.il" target="_blank" rel="external">logoMaker_public.il</a></li>
 <li>将logoMaker_public.il文件放到skill目录下，例如：X:\Cadence\SPB_16.6\share\local\pcb\skill</li>
 <li>打开X:\Cadence\SPB_16.6\share\local\pcb\skill目录下allegro.ilinit文件(若不存在则自己创建)，添加语句<code>load(&quot;logoMaker_public.il&quot;)</code></li>
@@ -60,7 +60,7 @@
     <link href="http://chinaluou.github.io/2017/03/21/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8B%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
     <id>http://chinaluou.github.io/2017/03/21/树莓派之初体验/</id>
     <published>2017-03-21T13:26:10.000Z</published>
-    <updated>2017-03-23T08:52:25.552Z</updated>
+    <updated>2017-04-10T04:06:41.244Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://omsnt3z0g.bkt.clouddn.com/Raspberry%20Pi.jpg" alt="Raspberry Pi"></p>
 <h1 id="关于树莓派"><a href="#关于树莓派" class="headerlink" title="关于树莓派"></a>关于树莓派</h1><p>树莓派出来已经有好几年了，从1代到现在的3代，可伶我之前都没关注过有这么个好玩的东西。树莓派用的是博通的专用芯片，国内也出了类似树莓派的板子香蕉派和香橙派用的是全志的芯片，板卡价格更低至65元，无法想象功能齐全性能杠杠的“小电脑”居然可以做到如此低成本Amazing~~~。</p>
@@ -130,11 +130,11 @@
     <link href="http://chinaluou.github.io/2017/03/12/%E5%BB%BA%E7%AB%99%E5%B0%8F%E8%AE%B0/"/>
     <id>http://chinaluou.github.io/2017/03/12/建站小记/</id>
     <published>2017-03-12T02:10:10.000Z</published>
-    <updated>2017-03-21T06:22:14.621Z</updated>
+    <updated>2017-04-10T04:07:14.864Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg" alt="pic"></p>
 <h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>最近学习相关Python相关东西，很多开源的代码都在Github上，于是乎自己也注册了Github的账户，闲逛Github时发现很多个人博客都是放在Github上，然后就搜索Github相关建站的原理资料，基本上就是GitHub+Hexo搭建免费独立个人博客。</p>
-<h1 id="建站目的"><a href="#建站目的" class="headerlink" title="建站目的"></a>建站目的</h1><p>博客已经流行N年了，以前基本都是在第三方平台上开博，博客的分隔和布局排版均受限于第三方。但是GitHub+Hexo方式建立的个人博客就开放多了，可以选各式各样的主题风格布局方式，这点是比较吸引我的地方，建立这个博客的目的最初目的也是为了学习下这个这种方式建站，于是乎次博就诞生了！</p>
+<h1 id="建站目的"><a href="#建站目的" class="headerlink" title="建站目的"></a>建站目的</h1><p>博客已经流行N年了，以前基本都是在第三方平台上开博，博客的分隔和布局排版均受限于第三方。但是GitHub+Hexo方式建立的个人博客就开放多了，可以选各式各样的主题风格布局方式，这点是比较吸引我的地方，建立这个博客的目的最初目的也是为了学习下这个这种方式建站，于是此次博就诞生了！</p>
 <h1 id="后续想法"><a href="#后续想法" class="headerlink" title="后续想法"></a>后续想法</h1><p>既然开了博客那也就想后续在这里记录些个人工作、学习、生活等等相关事宜，内容上就待自己慢慢完善了。</p>
 ]]></content>
     
